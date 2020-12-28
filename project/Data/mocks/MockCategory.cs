@@ -15,7 +15,7 @@ namespace project.Data.mocks
             {
                 return new List<Category>
                 {
-                    new Category { categoryName = "Modern design", desc = "modern type of design" }
+                    new Category { categoryName = "Modern design", desc = "modern type of design" },
                     new Category { categoryName = "Classic design", desc = "classic type of design" }
                 };
             }

@@ -20,7 +20,7 @@ namespace project.Data.mocks
                 {
                     new Car { 
                         name = "MDesign", 
-                        shortDesc = "", 
+                        shortDesc = "s1", 
                         longDesc = "", 
                         img = "", 
                         price = 30000, 
@@ -30,10 +30,20 @@ namespace project.Data.mocks
                     },
                      new Car {
                         name = "XDesign",
-                        shortDesc = "",
+                        shortDesc = "s2",
                         longDesc = "",
                         img = "",
                         price = 40000,
+                        isFavourite = false,
+                        available = true,
+                        Category = _categoryCars.AllCategories.Last()
+                    },
+                     new Car {
+                        name = "VDesign",
+                        shortDesc = "s2",
+                        longDesc = "",
+                        img = "",
+                        price = 50000,
                         isFavourite = true,
                         available = true,
                         Category = _categoryCars.AllCategories.Last()
