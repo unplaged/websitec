@@ -19,31 +19,28 @@ namespace project.Data.mocks
                 return new List<Car>
                 {
                     new Car { 
-                        name = "MDesign", 
-                        shortDesc = "s1", 
+                        name = "Минимализм", 
+                        shortDesc = "Максимум простора и минимум ненужных вещей", 
                         longDesc = "", 
-                        img = "/img/smile.jpg", 
-                        price = 30000, 
+                        img = "/img/minimalizm.jpg",
                         isFavourite = true, 
                         available = true, 
                         Category = _categoryCars.AllCategories.First()
                     },
                      new Car {
-                        name = "XDesign",
-                        shortDesc = "s2",
+                        name = "Стиль Кантри",
+                        shortDesc = "Использование преимущественно натуральных материалов без ярких контрастов.",
                         longDesc = "",
-                        img = "/img/peaple.jpg",
-                        price = 40000,
+                        img = "/img/kantri.jpg",
                         isFavourite = false,
                         available = true,
                         Category = _categoryCars.AllCategories.Last()
                     },
                      new Car {
-                        name = "VDesign",
-                        shortDesc = "s2",
+                        name = "Конструктивизм",
+                        shortDesc = "Простота, рациональность и практически полное отсутствие вычурного декора",
                         longDesc = "",
-                        img = "/img/glass.jpg",
-                        price = 50000,
+                        img = "/img/konstruct.jpg",
                         isFavourite = true,
                         available = true,
                         Category = _categoryCars.AllCategories.Last()

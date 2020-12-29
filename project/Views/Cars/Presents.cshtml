@@ -1,5 +1,4 @@
 ﻿<!DOCTYPE html>
-
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
@@ -12,17 +11,20 @@
         <p class="h5 my-0 me-md-auto fw-normal"><a href="/Cars/List">Designs</a></p>
         <nav class="my-2 my-md-0 me-md-3">
             <a class="p-2 text-dark" href="/Cars/List">Home</a>
+            <a class="p-2 text-dark" href="#">Presents</a>
             <a class="p-2 text-dark" href="/Users">Users</a>
-            <a class="btn btn-outline-primary" asp-controller="Account" asp-action="Register">Registration</a>
+            <a class="btn btn-outline-primary" asp-controller="Account" asp-action="Register">Sign up</a>
             <a class="btn btn-outline-primary" asp-controller="Account" asp-action="Login">Sign in</a>
         </nav>
     </header>
-    <div class="container mt-6">
-        @RenderBody()
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Pricing</h1>
+        <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
     </div>
-    <footer class="container">
-        <p>© 2020 Project, Inc. · <a href="https://vk.com//unplag">VK</a> · <a href="https://instagram.com/unplag">Inst</a></p>
-    </footer>
-    <script src="~/js/bootstrap.min.js"></script>
+<footer class="container">
+<p class="float-end"><a href="/Cars/List">Back to top</a></p>
+<p>© 2020 Project, Inc. · <a href="https://vk.com//unplag">VK</a> · <a href="https://instagram.com/unplag">Inst</a></p>
+</footer>
+<script src="~/js/bootstrap.min.js"></script>
 </body>
 </html>

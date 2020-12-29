@@ -21,7 +21,7 @@ namespace project.Controllers
             ViewBag.Title = "AllDesigns";
             CarsListViewModel obj = new CarsListViewModel();
             obj.allCars = _allCars.Cars;
-            obj.currCategory = "Дизайны";
+            obj.currCategory = "Description";
             return View(obj);
         }
 

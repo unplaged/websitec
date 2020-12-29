@@ -17,8 +17,6 @@ namespace project.Data.Models
 
         public string img { set; get; }
 
-        public ushort price { set; get; }
-
         public bool isFavourite { set; get; }
 
         public bool available { set; get; }
