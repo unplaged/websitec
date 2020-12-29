@@ -45,10 +45,8 @@ namespace project.Controllers
         }
 
         [HttpGet]
-        public IActionResult Login()
+        public IActionResult Login(string returnUrl = null)
         {
-            string url = Request.Headers["Referer"].ToString();
-            string returnUrl = url.Substring(url.LastIndexOf("/Home"));
             return View(new LoginViewModel { ReturnUrl = returnUrl });
         }
 
