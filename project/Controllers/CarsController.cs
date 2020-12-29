@@ -1,10 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using project.Data.Interfaces;
 using project.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace project.Controllers
 {
