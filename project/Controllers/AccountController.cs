@@ -43,5 +43,50 @@ namespace project.Controllers
             }
             return View(model);
         }
+
+        [HttpGet]
+        public IActionResult Login()
+        {
+            string url = Request.Headers["Referer"].ToString();
+            string returnUrl = url.Substring(url.LastIndexOf("/Home"));
+            return View(new LoginViewModel { ReturnUrl = returnUrl });
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login(LoginViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var result =
+                    await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
+                if (result.Succeeded)
+                {
+                    // проверяем, принадлежит ли URL приложению
+                    if (!string.IsNullOrEmpty(model.ReturnUrl) && Url.IsLocalUrl(model.ReturnUrl))
+                    {
+                        return Redirect(model.ReturnUrl);
+                    }
+                    else
+                    {
+                        return RedirectToAction("List", "Cars");
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Неправильный логин и (или) пароль");
+                }
+            }
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Logout()
+        {
+            // удаляем аутентификационные куки
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("List", "Cars");
+        }
     }
 }

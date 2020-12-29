@@ -5,3 +5,12 @@
 h2,h1,h3{
     color: #ffffff;
 }
+
+a{
+    color: #000000;
+    text-decoration: none;
+}
+
+text{
+    word-spacing: 5px;
+}
