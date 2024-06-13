@@ -1,20 +1,36 @@
-﻿<h1>Types of designs</h1>
-<h3>@Model.currCategory</h3>
+﻿<style>
 
+    body {
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    h1, h2, h3, h4, h5 {
+        color: #000000;
+    }
+</style>
+<h1><big>&#129534;Новостной обзор </big></h1>
+</br>
+<h2>@Model.currCategory :</h2>
+<h3>Добро пожаловать на "Новости OpenAI" – ваш источник информации о последних разработках и достижениях в области искусственного интеллекта. Cайт посвящен всему, что связано с OpenAI, предоставляя самые актуальные и глубокие материалы для тех, кто интересуется передовыми технологиями и их влиянием на мир. Основная информация представлена с неофициального источника - русского аналога форума OpenAI из канала <a href="https://t.me/joinchat/UZO8JUqRXnFhZjgy">Telegram - OpenAI Community.</a></h3>
+</br>
+<h3>Актуальное :</h3>
 <div class="row mt-5 mb-2">
     @{
         foreach (var car in Model.allCars)
         {
             <div class="col-lg-4">
-                <img class="img-thumbnail" src="@car.img" alt="@car.name" />
+                <video class="img-thumbnail" src="@car.img" alt="@car.name" autoplay loop muted></video>
                 <h2>@car.name </h2>
-                <p>@car.shortDesc</p>
-                <p><a class="btn btn-light" href="https://complet-info.ru/wp-content/uploads/2019/05/14-stil-minimalizm.jpg">Смотреть</a></p>
+                <h5>@car.shortDesc</h5>
+                <br/>
+                <p><a class="btn btn-light" href="">&#129505;</a>&nbsp;<a class="btn btn-light" href="https://community.openai.com/">Комментарии-форум</a>&nbsp;<a class="btn btn-light" href="https://t.me/c/1830750509/3491">Ссылка на источник</a></p>
             </div>
         }
     }
 </div>
-
+</br>
+<a class="-center" class="btn btn-light" href=""><big>Следующий блок новостей &#10145; </big></a>
 @{
     ViewData["Title"] = "Home Page";
 }

@@ -7,22 +7,39 @@
     <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="~/css/style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
     <header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-        <p class="h5 my-0 me-md-auto fw-normal"><a href="/Cars/List">Designs</a></p>
+        <p class="h5 my-0 me-md-auto fw-normal"><a href="/Cars/List"><big>&#129534 Новости OpenAI <img src="/img/123.png"></big><br /><small>OpenAI Community prod.</small></a></p>
         <nav class="my-2 my-md-0 me-md-3">
-            <a class="p-2 text-dark" href="/Cars/List">Home</a>
-            <a class="p-2 text-dark" href="/Users">Users</a>
-            <a class="btn btn-outline-primary" asp-controller="Account" asp-action="Register">Registration</a>
-            <a class="btn btn-outline-primary" asp-controller="Account" asp-action="Login">Sign in</a>
+            <a class="p-2 text-dark" href="/Cars/List">&#127968; Домой</a>
+            <a class="p-2 text-dark" href="https://community.openai.com/">&#128231; Форум</a>
+            <a class="p-2 text-dark" href="/Users">&#128589;&#8205;&#9794;&#65039; Профиль</a>
+            <a class="btn btn-outline-primary" asp-controller="Account" asp-action="Register">Регистрация</a>
+            <a class="btn btn-outline-primary" asp-controller="Account" asp-action="Login">&#128274; Вход</a>
         </nav>
     </header>
     <div class="container mt-6">
         @RenderBody()
     </div>
+    </br>
+    </br>
+    </br>
     <footer class="container">
-        <p>© 2020 Project, Inc. · <a href="https://vk.com//unplag">VK</a> · <a href="https://instagram.com/unplag">Inst</a></p>
+        <p><h3>© 2024 Новости OpenAI. Community inc.</h3>
+        </br>
+            <h3>
+                О нас:</br>
+                "Новости OpenAI" - ваш надежный источник информации о самых последних разработках и достижениях в области искусственного интеллекта. Мы стремимся предоставлять нашим читателям только актуальные и проверенные данные.
+            </h3>
+            </br>
+            <h3>
+                Полезные ссылки :
+            </h3>
+        <a class="btn btn-light" href="https://t.me/joinchat/UZO8JUqRXnFhZjgy">Telegram OpenAI</a>&nbsp;&nbsp;&nbsp;<a class="btn btn-light" href="https://community.openai.com/">Offical source OpenAI</a></p>
     </footer>
+    </br>
+    </br>
     <script src="~/js/bootstrap.min.js"></script>
 </body>
 </html>

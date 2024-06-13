@@ -19,28 +19,28 @@ namespace project.Data.mocks
                 return new List<Car>
                 {
                     new Car { 
-                        name = "Минимализм", 
-                        shortDesc = "Максимум простора и минимум ненужных вещей", 
+                        name = "Нейросеть Andrenaline", 
+                        shortDesc = "Новая мощная нейронка Andrenaline, useadrenaline.com которая помогает проверить код на ошибки и даёт подробные рекомендации по исправлению.\r\n\r\nСервис работает прямо в браузере, скоро обещают сделать отдельное расширение для VSCode.\r\n", 
                         longDesc = "", 
-                        img = "/img/minimalizm.jpg",
+                        img = "/img/125.mp4",
                         isFavourite = true, 
                         available = true, 
                         Category = _categoryCars.AllCategories.First()
                     },
                      new Car {
-                        name = "Стиль Кантри",
-                        shortDesc = "Использование преимущественно натуральных материалов без ярких контрастов.",
+                        name = "Stable Doodle",
+                        shortDesc = "Stable Doodle — это новый раздел Stability AI, который из обычного черно-белого эскиза может сделать самостоятельное изображение. \r\n\r\nНа выбор предлагается несколько стилей: фэнтези-арт, оригами, изометрия, комиксы, digital-искусство и много чего другого.\r\n\r\nКартинки составляются по текстовому запросу, а процесс занимает не более 5 секунд.",
                         longDesc = "",
-                        img = "/img/kantri.jpg",
+                        img = "/img/124.mp4",
                         isFavourite = false,
                         available = true,
                         Category = _categoryCars.AllCategories.Last()
                     },
                      new Car {
-                        name = "Конструктивизм",
-                        shortDesc = "Простота, рациональность и практически полное отсутствие вычурного декора",
+                        name = "AI Prompt",
+                        shortDesc = "AI Prompt, spline.design/ai — это нейросеть от Spline, где можно за несколько секунд создать 3D-фигуры, фактуру и анимированные сцены. \r\n\r\nРаботает стандартно — вводим текстовый запрос и получаем результат",
                         longDesc = "",
-                        img = "/img/konstruct.jpg",
+                        img = "/img/126.mp4",
                         isFavourite = true,
                         available = true,
                         Category = _categoryCars.AllCategories.Last()

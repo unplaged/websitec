@@ -1,4 +1,16 @@
 ﻿@model project.ViewModels.RegisterViewModel
+<style>
+
+    body {
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    h1, h2, h3, h4, h5 {
+        color: #000000;
+    }
+</style>
 <h2>Регистрация</h2>
 <form method="post" asp-controller="Account" asp-action="Register">
     <div asp-validation-summary="ModelOnly"></div>

@@ -18,12 +18,11 @@ namespace project.Controllers
 
         public ViewResult List()
         {
-            ViewBag.Title = "AllDesigns";
+            ViewBag.Title = "...";
             CarsListViewModel obj = new CarsListViewModel();
             obj.allCars = _allCars.Cars;
-            obj.currCategory = "Description";
+            obj.currCategory = "Описание";
             return View(obj);
         }
-
     }
 }
